@@ -2,7 +2,7 @@
 ## 1. create a "credential.json" file
 ```json
 {
-  "usernaem:"username",
+  "username:"username",
   "password":"password"
 }
 ```
