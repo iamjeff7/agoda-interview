@@ -33,16 +33,16 @@ class PublicGitHubRepo:
         self.iterate_page(data, info_type)
     
     def iterate_page(self, pages, info_type):
-        count_page = 0
+        count= 0
         current_page = 0
         while True:
-            page = pages.get_page(count_page)
+            page = pages.get_page(current_page)
             for idx, p in enumerate(page):
                 self.format_info(p, info_type)
-                count_page += 1
-                if count_page == 10:
+                count += 1
+                if count == 10:
                     break
-            count_page += 1
+            current_page += 1
                 
     def format_info(self, p, info_type):
         p_num = p.number
