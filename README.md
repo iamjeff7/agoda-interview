@@ -1,7 +1,20 @@
 # agoda-interview
 ## 1. create a "credential.json" file
 ```json
-{"username:"username","password":"password"}
+
+{
+  "username:"username",
+  "password":"password"
+}
+
+```
+```javascript
+
+{
+  "username:"username",
+  "password":"password"
+}
+
 ```
 ## Requirements
 1. python3
